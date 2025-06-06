@@ -4,6 +4,7 @@ import Link from "next/link";
 import { useEffect, useRef, useState } from "react";
 import { VoteIcon, MenuIcon, XIcon } from "lucide-react";
 import { Button } from "@/shared/Button";
+import CustomConnectButton from "./CustomConnectButton";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -88,8 +89,9 @@ const Navbar = () => {
         </Link>
 
         <div className="w-full " onClick={() => setIsMenuOpen(false)}>
-          <appkit-button />
+          {/* <appkit-button /> */}
         </div>
+        <CustomConnectButton />
       </div>
     </nav>
   );
